@@ -6,9 +6,12 @@
   </head>
   <body>
 <<h1>Hello Coursera Students. Lets get started</h1>
-<<h2>var result = sol.common.IxUtils.execute("RF_sol_common_services_ChildrenDataCollector", {
-  parentId: '10766',
-  objKeys: ["POSTING_NO.", "POSTING_NAME", "PUBLISHING_DATE"]
-});</h2>
+<<h2>sol.common.IxUtils.execute("RF_sol_common_services_ChildrenDataCollector", {
+    parentId: path,
+    formatter: "sol.common.ObjectFormatter.StatisticSord",
+    sordKeys: ["RECRUITING_REQUISITION_GUID"],
+    objKeys: ["L1", "L2", "L3"],
+
+}</h2>
   </body>
 </html>
